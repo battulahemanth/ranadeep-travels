@@ -1,0 +1,378 @@
+/* -------------------- General Page -------------------- */
+.about-page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #010d18;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -------------------- Hero Section -------------------- */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  background-color: #a6e20f;
+  background-size: cover;
+  /* background-image: url('/images/ranadeep.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(18, 86, 189);
+}
+
+.about-hero h1 {
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 768px;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  opacity: 0.9;
+  color: white;
+}
+
+/* Responsive hero */
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 3.75rem;
+  }
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+}
+
+/* -------------------- About Content -------------------- */
+.about-content {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #dd2476;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* -------------------- Highlights Grid -------------------- */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.highlight-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(221, 36, 118, 0.25);
+}
+
+.highlight-card img {
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* -------------------- Reviews -------------------- */
+.reviews {
+  background: #fff0f5;
+  padding: 2rem 1rem;
+}
+
+.reviews h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #dd2476;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.review-card p {
+  font-style: italic;
+  color: #444;
+}
+
+.review-card h4 {
+  margin-top: 1rem;
+  color: #dd2476;
+  font-weight: 600;
+}
+
+.rating {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #ffb400;
+}
+
+/* -------------------- Travel Services -------------------- */
+.travel-services {
+  background: linear-gradient(180deg, #fff5f9, #f0f7ff);
+  padding: 2rem 1rem;
+}
+
+.travel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.travel-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+.travel-title span {
+  background: linear-gradient(90deg, #dd2476, #7b5cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.travel-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.travel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.travel-media img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.travel-content {
+  padding: 1rem;
+}
+
+.travel-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.travel-text {
+  font-size: .95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.travel-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #dd2476, #7b5cff);
+  color: #fff;
+  text-decoration: none;
+  transition: transform .25s ease;
+}
+
+.travel-cta:hover {
+  transform: translateY(-2px);
+}
+
+/* -------------------- Agency History -------------------- */
+.agency-history {
+  padding: 2rem 1rem;
+  background: #ffffff;
+  max-width: 1500px;
+  margin: 2rem auto;
+  border-left: 6px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  background-color:bisque;
+}
+
+.history-heading {
+  font-size: 4rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.history-heading:hover {
+  border-bottom: 2px solid #dd2476;
+}
+
+.timeline {
+  border-left: 3px solid #ddd;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.timeline li {
+  margin-bottom: 1.2rem;
+}
+
+.timeline-year {
+  font-weight: bold;
+  color: #e53a00;
+}
+
+/* -------------------- Company Section -------------------- */
+.company-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin: 2rem auto;
+  max-width: 1500px;
+  background-color:  beige;
+}
+
+.company-subsection {
+  flex: 1;
+  min-width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.company-subsection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.company-subheading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.company-paragraph, 
+.company-list {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.company-list li {
+  margin-bottom: .5rem;
+}
+
+/* -------------------- Mobile View -------------------- */
+@media (max-width: 640px) {
+  .about-hero {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+  }
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .highlight-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .reviews h2 {
+    font-size: 1.6rem;
+  }
+
+  .travel-title {
+    font-size: 1.6rem;
+  }
+
+  .company-subheading {
+    font-size: 1.1rem;
+  }
+
+  
+
+  .founder-heading {
+    font-size: 1.8rem;
+  }
+}

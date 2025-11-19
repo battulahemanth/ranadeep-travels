@@ -1,0 +1,69 @@
+/* Default desktop styles */
+.hero-img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+
+.carousel-caption h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Mobile view */
+/* Default desktop styles */
+.hero-img {
+  height: 90vh; /* full screen feel on desktop */
+  object-fit: cover;
+}
+
+
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .hero-img {
+    height: 70vh; /* slightly smaller for tablets */
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .hero-img {
+    height: auto;           /* let the image adjust naturally */
+    max-height: 50vh;       /* but keep it from being too tall */
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    bottom: 5%;
+    width: 95%;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 8px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  /* Controls smaller for mobile */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 26px;
+    height: 26px;
+  }
+}

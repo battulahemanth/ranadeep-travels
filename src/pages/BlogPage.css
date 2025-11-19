@@ -1,0 +1,147 @@
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #2c3e50;
+  background-size: cover;
+  /* Uncomment if you want a background image */
+  /* background-image: url('/images/ranadeep.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Optional overlay for dark effect */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 768px;
+  text-align: center;
+  z-index: 1; /* Keeps text above overlay */
+}
+
+.hero-content h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-content p {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* Responsive hero */
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 3.75rem;
+  }
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+}
+
+
+.blog-section {
+  padding: 60px 20px;
+  background: #fafafa;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.blog-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+}
+
+.blog-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.blog-excerpt {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  padding: 10px 18px;
+  border: none;
+  background: #d32f2f;
+  color: #fff;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background: #b71c1c;
+}
