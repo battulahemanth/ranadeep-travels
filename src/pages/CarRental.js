@@ -37,7 +37,7 @@ export const CarRental = () => {
 - Passengers: ${form.passengers}`;
 
     // Replace with your WhatsApp number (country code + number, no +)
-    const phoneNumber = "9247152469";
+    const phoneNumber = "7288900770";
 
     // ✅ Clean number (remove spaces/symbols) and validate
     const cleanNumber = phoneNumber.replace(/\D/g, "");
