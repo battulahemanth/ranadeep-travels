@@ -32,9 +32,9 @@ const Home = () => {
           <img src="/images/groupcars.png" alt="Car" className="combine" />
         </div>
 
-          <div class="section">
-  <h2 class="brand-heading">BRANDS</h2>
-</div>
+        <div className="section">
+          <h2 className="brand-heading">BRANDS</h2>
+        </div>
 
   <div >
     <img src="/images/kia.png" alt="Car" className="brand" />    
@@ -46,8 +46,8 @@ const Home = () => {
 
   </div>
 
-  {/* <div class="section">
-    <h2 class="brand-heading">OUR SERVICES</h2>
+  {/* <div className="section">
+    <h2 className="brand-heading">OUR SERVICES</h2>
   </div> */}
 
 
@@ -115,16 +115,16 @@ const Home = () => {
 
 
 {/* cusomer reviews */}
-<section class="services">
-  <div class="services-container">
+<section className="services">
+  <div className="services-container">
 
-    <h2 class="services-title">Our Travel Customers Reviews</h2>
+    <h2 className="services-title">Our Travel Customers Reviews</h2>
 
-    <div class="services-grid">
+    <div className="services-grid">
 
       
-      <div class="service-card">
-        <img src="/images/3.jpg" alt="Flight" class="service-icon" />
+      <div className="service-card">
+        <img src="/images/3.jpg" alt="Flight" className="service-icon" />
         <h3>🤝 VIP Delegation</h3>
 <p>
   Premium travel arrangements for corporate leaders and dignitaries.  
@@ -132,15 +132,15 @@ const Home = () => {
   and world-class service for domestic and international trips.
 </p>
 
-        <div class="review">
+        <div className="review">
           <p><strong>Ramesh Kumar:</strong> "Smooth booking and cheapest fares!"</p>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div className="rating">⭐⭐⭐⭐⭐</div>
         </div>
       </div>
 
       
-      <div class="service-card">
-        <img src="/images/3.jpg" alt="Hotel" class="service-icon" />
+      <div className="service-card">
+        <img src="/images/3.jpg" alt="Hotel" className="service-icon" />
         <h3>🚌 Employee Transport</h3>
         <p>
          Reliable and comfortable transportation for employees.  
@@ -148,35 +148,35 @@ const Home = () => {
          punctual schedules, and a focus on safety and convenience.
         </p>
 
-        <div class="review">
+        <div className="review">
           <p><strong>Priya Sharma:</strong> "Hotel was clean and in a great location."</p>
-          <div class="rating">⭐⭐⭐⭐</div>
+          <div className="rating">⭐⭐⭐⭐</div>
         </div>
       </div>
 
       
-      <div class="service-card">
-        <img src="/images/3.jpg" alt="Tours" class="service-icon" />
+      <div className="service-card">
+        <img src="/images/3.jpg" alt="Tours" className="service-icon" />
         <h3>🚌 Tour Packages</h3>
         <p>
           Explore our curated holiday packages, including city tours, adventure trips, and honeymoon specials.
         </p>
-        <div class="review">
+        <div className="review">
           <p><strong>Anil Verma:</strong> "Our family trip was well organized!"</p>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <div className="rating">⭐⭐⭐⭐⭐</div>
         </div>
       </div>
 
   
-      <div class="service-card">
-        <img src="/images/3.jpg" alt="Transport" class="service-icon" />
+      <div className="service-card">
+        <img src="/images/3.jpg" alt="Transport" className="service-icon" />
         <h3>🚖 Transport & Rentals</h3>
         <p>
           Reliable cab, bus, and car rental services to make your journey smooth and enjoyable.
         </p>
-        <div class="review">
+        <div className="review">
           <p><strong>Sneha Patil:</strong> "Cab was on time, driver was polite."</p>
-          <div class="rating">⭐⭐⭐⭐</div>
+          <div className="rating">⭐⭐⭐⭐</div>
         </div>
       </div>
 

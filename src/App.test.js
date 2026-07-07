@@ -1,8 +1,22 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
+
+jest.mock(
+  'react-router-dom',
+  () => ({
+    BrowserRouter: ({ children }) => <>{children}</>,
+    Routes: ({ children }) => <>{children}</>,
+    Route: ({ element }) => element,
+  }),
+  { virtual: true }
+);
+
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders navbar and home page content', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  expect(screen.getByAltText(/Ranadeep Travels/i)).toBeInTheDocument();
+  expect(screen.getAllByText(/Welcome to Ranadeep Travels/i).length).toBeGreaterThanOrEqual(1);
+  expect(screen.getAllByRole('button', { name: /Explore More/i }).length).toBeGreaterThanOrEqual(1);
 });
